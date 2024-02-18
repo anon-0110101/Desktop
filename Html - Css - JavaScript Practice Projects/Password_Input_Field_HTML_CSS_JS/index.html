@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Visability Toggle - Hart Studios</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/dfa2bfed1b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="input-box">
+            <input type="password" placeholder="password" id="password">
+            <i class="fa-regular fa-eye" id="openEyeIcon"></i>
+            <i class="fa-regular fa-eye-slash" id="eyeicon"></i>
+        </div>
+
+        <script>
+            let eyeicon = document.getElementById("eyeicon");
+            let password = document.getElementById("password");
+            let openEyeIcon = document.getElementById("openEyeIcon");
+
+            eyeicon.onclick = function(){
+                if(password.type == "text"){
+                    password.type = "password";
+                }
+            }
+            openEyeIcon.onclick = function() {
+                if (password.type == "password"){
+                    password.type = "text";
+                }
+
+            }
+        </script>
+    </body>
+</html>

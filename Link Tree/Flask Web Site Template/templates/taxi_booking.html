@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #FFD700;
+            color: #B22222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .booking-form {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #B22222;
+            border-radius: 5px;
+        }
+
+        .form-button {
+            display: inline-block;
+            background-color: #B22222;
+            color: #FFD700;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-button:hover {
+            background-color: #960000;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Taxi Booking</h1>
+    <form action="/submit-taxi-booking" method="post" class="booking-form">
+        <div class="form-group">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pickup-time" class="form-label">Pickup Time:</label>
+            <input type="time" id="pickup-time" name="pickup_time" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pickup-location" class="form-label">Pickup Location:</label>
+            <input type="text" id="pickup-location" name="pickup_location" class="form-input" required>
+        </div>
+
+        <button type="submit" class="form-button">Book a Taxi</button>
+    </form>
+</body>
+</html>

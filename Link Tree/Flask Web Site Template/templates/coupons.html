@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        background-color: #FFD700;
+        color: #B22222;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    th {
+        background-color: #B22222;
+        color: #FFD700;
+        padding: 10px;
+    }
+    
+    td {
+        background-color: #FFD700;
+        color: #B22222;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 5px 0;
+    }
+</style>
+<body>
+    <h1>Weekly Coupons Schedule</h1>
+    
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>Day</th>
+            <th>Discounts</th>
+        </tr>
+        {% for day, discounts in weekly_schedule.items() %}
+        <tr>
+            <td>{{ day }}</td>
+            <td>
+                <ul>
+                    {% for discount in discounts %}
+                    <li>{{ discount.name }}: {{ discount.discount }}</li>
+                    {% else %}
+                    <li>No discounts available</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+{% endblock %}

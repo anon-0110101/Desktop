@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+  }
+
+  h1 {
+      background-color: #FFD700;
+      color: #B22222;
+      padding: 20px;
+      text-align: center;
+  }
+
+  #providers.container {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  .mt-4 {
+      margin-top: 1.5rem;
+  }
+
+  .table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  .table-bordered,
+  .table-bordered th,
+  .table-bordered td {
+      border: 1px solid #B22222;
+  }
+
+  .table th,
+  .table td {
+      padding: 10px;
+      text-align: left;
+      background-color: #FFD700;
+      color: #B22222;
+  }
+
+  a {
+      color: #B22222;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: #960000;
+      text-decoration: none;
+  }
+</style>
+
+    <h1>Proveedores</h1>
+    <div id="providers container">
+        <h1 class="text-center mt-4">Lista de Proveedores</h1>
+        <table class="table table-bordered mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Proveedor</th>
+              <th scope="col">Teléfono</th>
+              <th scope="col">Sitio Web</th>
+              <th scope="col">Redes Sociales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abborrates (Bebidas)</td>
+              <td>+52 555-123-4567</td>
+              <td><a href="#">www.abborrates.com</a></td>
+              <td>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Panaria (Pan)</td>
+              <td>+52 555-234-5678</td>
+              <td><a href="#">www.panaria.com</a></td>
+              <td>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Tortillaria (Tortillas)</td>
+              <td>+52 555-345-6789</td>
+              <td><a href="#">www.tortillaria.com</a></td>
+              <td>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Dulcelaria (Dulces)</td>
+              <td>+52 555-456-7890</td>
+              <td><a href="#">www.dulcelaria.com</a></td>
+              <td>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Distribuidor Local (Papitas)</td>
+              <td>+52 555-567-8901</td>
+              <td><a href="#">www.distribuidorlocal.com</a></td>
+              <td>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+              </td>
+            </tr>
+            <tr>
+                <td>Distribuidor Local (Verduras y Frutas)</td>
+                <td>+52 998-137-1407</td>
+                <td><a href="#">www.verdurasyfrutas.com</a></td>
+                <td>
+                  <a href="#">Facebook</a> |
+                  <a href="#">Twitter</a> |
+                  <a href="#">Instagram</a>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/
+{% endblock %}
