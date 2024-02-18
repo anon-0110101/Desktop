@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Porki's Tienda{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/promotions.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('home') }}">Casa</a>
+            <a href="{{ url_for('coupons') }}">Coupons</a>
+            <a href="{{ url_for('promotions') }}">Promotions</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <a href="{{ url_for('proveedores') }}">Proveedores</a>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <h4>Check it out on social</h4>
+        <a href = "facebook.com">Facebook</a>
+        <a href = "instagram.com"> Instagram</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/w3-replacement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css/steal.css">
+    <title>TutorPersonal</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+        <!-- Navbar -->
+      <div class="navbar-wrapper">
+        <div class="menu-toggle-wrapper">
+          <a class="menu-toggle my-button my-padding-large my-hide-medium my-hide-large" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="navbar bar">
+          <div>
+            <a href="#home" class="my-button my-padding-large">Casa</a>
+            <a href="#about" class="my-button my-padding-large my-hide-small">Sobre Me</a>
+            <a href="#service" class="my-button my-padding-large my-hide-small">Servicios</a>
+            <a href="#testimony" class="my-button my-padding-large my-hide-small">Testimonias</a>
+            <a href="#contact" class="my-button my-padding-large my-hide-small">Contacto</a>
+          </div>
+        </div>
+        
+          <!-- Navbar on small screens -->
+        <div id="navDemo" class="nav-bar-block nav-black nav-hide nav-top" style="margin-top:46px">
+          <a href="#home" onclick="myFunction()">Casa</a>            
+          <a href="#about" onclick="myFunction()">Sobre Me</a>
+          <a href="#service" onclick="myFunction()">Servicios</a>
+          <a href="#testimony" onclick="myFunction()">Testimonias</a>
+          <a href="#contact" onclick="myFunction()">Contacto</a>
+        </div>
+      </div>
+
+      <div class='pic'>
+        <div class="logo" onclick="scrollToTop()">
+            <img src="static/logo12.png" alt="Logo">
+          </button>
+        </div>
+        <div class="home">
+          <h1>Vivir <br> Es <br> Apreder</h1>
+        </div>
+        <div class="tutor_pic">
+          <img src="static/img3.PNG">
+        </div>
+      </div>
+
+    <main>
+      <div class="about delayed-appear" id="about">
+        <div class="logo1" onclick="scrollToTop()">
+            <img src="static/logo12.png" alt="Logo">
+          </button>
+        </div>
+        <div>
+          <h2 class="title">About Me</h2>
+          <div class="about-main">
+            <div class="about-text">
+              <h3>Hola soy Diana //<br>Personal Tutor </h3>
+              <p>I am a 28 year old woman who grew up in the heart of Chiapas. <br> I studied in (____university____) to be an English teacher. <br> From a young age I was always inspired to teach others and with the dominance of English in the world, I took on the responsibility to become a professional tutor. <br> I have studied English for ____ years and have been teaching it for ___years___ years. <br> I love to travel and have been to 3 continents and 32 different countries. <br> while I am away I love to get emmersed in the culture and traditions.</p>
+              <span class="social my-text-white" lang="es">
+                <p>Follow Me on Social media</p>
+                <div class="my-margin-top" id="social">
+                  <a href="#"><i class="fa fa-facebook-official my-hover-opacity icons"></i></a>
+                  <a href="#"><i class="fa fa-instagram my-hover-opacity icons"></i></a>
+                  <a href="#"><i class="fa fa-snapchat my-hover-opacity icons"></i></a>
+                  <a href="#"><i class="fa fa-twitter my-hover-opacity icons"></i></a>
+                  <a href="#"><i class="fa fa-linkedin my-hover-opacity icons"></i></a>
+                </div>
+              </span>
+              
+            </div> 
+          </div>
+        </div>
+      </div>
+      
+      <div class="service delayed-appear" id="service">
+        <div class="logo2" onclick="scrollToTop()">
+            <img src="static/logo12.png" alt="Logo">
+          </button>
+        </div>
+        <h2 class="title"> Servicios</h2>
+        <div class="card">
+          <div class="card-list">
+            <div class="card-image">
+              <img src="static/Screen Shot 2023-04-28 at 1.23.50 PM.png" alt="Photo by Anastase Maragos | Unsplash"/>
+            </div>
+            <div class="card-text"> 
+              <h4>Programas Personales</h4>
+              <p>$15/Un Mes</p>
+              <a href="#join">
+                <button class="my-btn my-red my-margin-top my-round" style="width:100%; background-color:#95BDFF;">Join</button>
+              </a>
+            </div>
+          </div>
+          <div class="card-list">
+            <div class="card-image">
+              <img src="static/Screen Shot 2023-04-28 at 1.23.50 PM.png" alt="Photo by Sergio Pedemonte | Unsplash"/>
+            </div>
+            <div class="card-text"> 
+              <h4>Personal Tutor</h4>
+              <p>$20/Hour</p>
+              <a href="#join">
+                <button class="my-btn my-red my-margin-top my-round" style="width:100%; background-color:#95BDFF;">Join</button>
+              </a>
+            </div>
+          </div>
+          <div class="card-list"><div class="card-image">
+            <img src="static/Screen Shot 2023-04-28 at 1.23.50 PM.png" alt="Photo by Spencer Davis | Unsplash"/>
+          </div>
+          <div class="card-text">
+            <h4>Preguntas y Respuestas</h4>
+            <p>$10/Per Hora</p>
+            <a href="#join">
+              <button class="my-btn my-red my-margin-top my-round" style="width:100%; background-color:#95BDFF;">Join</button>
+            </a>
+          </div>
+          
+
+        </div>
+      </div>
+      <div class="testimony delayed-appear" id="testimony">
+        <div class="logo3" onclick="scrollToTop()">
+            <img src="static/logo12.png" alt="Logo">
+          </button>
+        </div>
+        <h2 class="title"> Que Dicen Sobre a Mi</h2>
+        <div class="testimony-main">
+          <div class="testimony-image">
+            <img src="static/Screen Shot 2023-04-28 at 1.22.57 PM.png" alt="Photo by Karsten Winegeart | Unsplash"/>
+          </div>
+          <div class="testimony-text">
+            <h3>Miguel Rodriguiz</h3>
+            <p style="font-style: italic;">
+              "Con ella yo podia entender mas ingles y tenia muchas conversacioines con gentes de otra lugares. Mucha gracias y recomendia a ella por todos quien quieren aprender ingles.  "
+            </p>
+          </div>
+        </div>
+        <div class="testimony-main">
+          <div class="testimony-image">
+            <img src="static/Screen Shot 2023-04-28 at 1.22.57 PM.png" alt="Photo by Hayley Kim Design | Unsplash"/>
+          </div>
+          <div class="testimony-text">
+            <h3>Elizabeth Solis</h3>
+            <p style="font-style: italic;">
+            "Wow, Diana es una maestra que es mas fantastica de todos, con ella podia aprender ingles facil y fue a Europa y aya encontrar amigas con podia tener conversaciones en ingles. Con Diana yo podia viajar con much confidiances."
+            </p>
+          </div>
+        </div>
+        <div class="testimony-main">
+          <div class="testimony-image">
+            <img src="static/Screen Shot 2023-04-28 at 1.22.57 PM.png" alt="Photo by Scott Webb | Unsplash"/>
+          </div>
+          <div class="testimony-text">
+            <h3>Abad Hernandez</h3>
+            <p style="font-style: italic;">
+              "Diana ha sido la mejor profesora de español para mí, tenía preguntas sobre diferentes pronunciaciones y pacientemente me guió a través de las preguntas que tenía. Si estás buscando mejorar tu inglés ella es la profesora para ti. "
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact delayed-appear" id="join">
+        <div class="logo4" onclick="scrollToTop()">
+            <img src="static/logo12.png" alt="Logo">
+          </button>
+        </div>
+        <h2 class="title"> Únete A Nosotros</h2>
+        <div class="contact-main">
+          <div class="contact-form">
+            <form >
+              <div class="name"> 
+                <input  class="input name-list" type="text" placeholder="First Name*">
+                <input  class="input name-list" type="text" placeholder="Last Name*">
+              </div>
+              <input id="email" class="input"  type="text" placeholder="Email*">
+              <textarea  id="email" class="input" minlength="100"  placeholder="Your Message*" required></textarea>
+              <button class="my-btn my-red my-round">Send</button>
+            </form>
+          </div>
+          <div class="contact-image">
+            <img src="static/Screen Shot 2023-04-28 at 1.22.57 PM.png" alt="Photo by Bruce Mars | Unsplash"/> 
+          </div>
+        </div>
+      </div>
+      <div class="contact-address delayed-appear" id="contact">
+        <div class="logo5" onclick="scrollToTop()">
+            <img src="static/logo12.png" alt="Logo">
+          </button>
+        </div>
+        <h2 class="title"> Póngase En Contacto</h2>
+        <div class="contact-address-list">
+          <div class="contact-list">
+            <h4>Locacion</h4>
+            <p>322032 Chiapas Avenida.
+             Chiapas, MX 07631</p>
+          </div>
+        <div class="contact-list">
+          <h4>Hora De Apertura</h4>
+          <p>Lunes - Sabado: 8am - 8pm</p>
+          <p>Domingo:8am- 9pm</p>
+        </div>
+        <div class="contact-list">
+          <h4>Saluda</h4>
+          <p> <i class="fa fa-phone " style="margin-right: 8px;font-size: 20px;"></i> +52 9989576781</p>
+          <p><i class="fa fa-phone" style="margin-right: 8px;font-size: 20px;"></i>+52 9987342591</p>
+          <p><i class="fa fa-envelope " style=" margin-right: 5px;font-size: 20px;"></i>Diana_c@yahoo.com</p>     
+        </div>
+      </div>
+    
+    </main>
+    <div class="my-padding my-center" style="background: #FFF4A3; padding: 10px 0px !important; color:#282A35; ">
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+          <p style="margin: 10px !important;">This website was made with Spaces. Make your own free website today.</p>
+          <button class="my-margin-top my-btn my-text-white my-round-xxlarge" style="background-color: #282A35; padding: 8px 25px; margin: 0px !important;">Start now</button>
+        </div>
+    </div>  
+  </body>
+</html>
